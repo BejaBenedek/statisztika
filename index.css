@@ -3,12 +3,23 @@
     color: black;
 }
 
+.big {
+  font-size:30px;
+}
+
+.small {
+  font-size: 15px;
+}
+
 .kor {
   border-radius: 100px;
   background-color:  rgb(72, 53, 134);
   height: 100px;
   width: 100px;
-  place-content: center;
+  align-content: center;
+  text-align: center;
+  margin: auto;
+  background: linear-gradient(to bottom, rgb(56, 23, 163)  0%, rgb(82, 41, 216) 100%);
 }
 
 .container {
@@ -17,7 +28,7 @@
     grid-template-rows: 50px 50px 50px 50px 50px 50px; 
     row-gap: 10px;
     column-gap: 20px;
-  
+
     
 }
 
@@ -28,6 +39,7 @@
     border-radius: 25px;
     grid-column: 1 / span 1;
     grid-row: 1 / span 6 ; 
+    
   
   }
 
@@ -41,46 +53,54 @@
   .item3 {
     background-color: rgb(204, 170, 170);
     float:left;
-    color:  rgb(179, 30, 30);
+    color:  rgb(148, 21, 21);
     border-radius: 20px;
     grid-column: 2 ;
     grid-row: 2 ; 
+    padding: auto;
   }
 
   .item4 {
     background-color: rgb(255, 249, 168);
     float:left;
-    color:  rgb(167, 155, 0);
+    color:  rgb(141, 132, 0);
     border-radius: 20px;
     grid-column: 2 ;
     grid-row: 3 ; 
+    padding: auto;
   }
    
   .item5 {
     background-color: rgb(206, 252, 255);
     float:left;
-    color:  rgb(5, 192, 206);
+    color:  rgb(0, 174, 187);
     border-radius: 20px;
     grid-column: 2 ;
     grid-row: 4 ; 
+    padding: auto;
   }
 
   .item6 {
-    background-color: rgb(163, 165, 255);
+    background-color: rgb(161, 163, 253);
     float:left;
-    color:  rgb(20, 24, 255);
+    color:  rgb(0, 4, 221);
     border-radius: 20px; 
     grid-column: 2 ;
     grid-row: 5 ; 
+    padding: auto;
   }
 
   .item7 {
-    background-color: rgb(139, 139, 139);
+    background-color: rgb(177, 176, 176);;
     text-align:center;
     border-radius: 50px;
     grid-column: 2 ;
     grid-row: 6 ; 
+    
+    
   }
+
+
 
 @media only screen and (max-width: 750px) {
 
@@ -117,6 +137,7 @@
         border-radius: 20px;
         grid-column: 1 ;
         grid-row: 4;
+        padding: auto;
       }
     
       .item4 {
@@ -126,6 +147,7 @@
         border-radius: 20px;
         grid-column: 1 ;
         grid-row: 5;
+        padding: auto;
       }
        
       .item5 {
@@ -135,6 +157,7 @@
         border-radius: 20px;
         grid-column: 1 ;
         grid-row: 6;
+        padding: auto;
       }
     
       .item6 {
@@ -144,10 +167,11 @@
         border-radius: 20px;
         grid-column: 1 ;
         grid-row: 7;
+        padding: auto;
       }
     
       .item7 {
-        background-color: rgb(139, 139, 139);
+        background-color: rgb(177, 176, 176);
         text-align:center;
         border-radius: 50px;
         grid-column: 1 ;
